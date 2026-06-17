@@ -1,4 +1,15 @@
-package PACKAGE_NAME;
+public class Boleto extends FormaPagamento {
+    public Boleto(double valor) {
+        super(valor);
+    }
 
-public class Boleto {
+    @Override
+    public void processar() {
+        System.out.println("Processando pagamento via Boleto");
+    }
+
+    @Override
+    public String toString() {
+        return "Boleto:" + valor;
+    }
 }
